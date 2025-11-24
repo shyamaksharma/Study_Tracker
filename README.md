@@ -1,3 +1,42 @@
+# 📘 Study Tracker
+
+	A simple, modular Python application that helps users log what subjects they studied each day, how long they studied them, and provides a daily summary of their study patterns.
+
+⸻
+
+# 📌 Overview
+
+	The Study Tracker allows users to record their study habits over multiple days.
+	For each day, the user enters the subjects studied and the time spent on each.
+	The program then calculates totals, finds the most/least studied subjects, and prints a clean daily summary.
+⸻
+
+# ✨ Features
+	•	Track study activity for any number of days
+	•	Add multiple subjects per day
+	•	Automatically compute:
+	•	Total minutes studied
+	•	Most studied subject
+	•	Least studied subject
+	•	Visual bar representation of minutes (every # = 5 minutes)
+	•	Handles single-subject days cleanly
+	•	Fully modularized with 4 separate components:
+	•	Input module
+	•	Processing module
+	•	Output module
+	•	Main controller module
+	•	Error-safe and user-friendly
+
+⸻
+
+# 🛠 Technologies / Tools Used
+	•	Python 3
+	•	Modular design (multiple .py files)
+	•	Git for version control
+	•	Command-line interface (CLI)
+
+⸻
+
 # Functional Requirements
 
 # 1. Input Module
