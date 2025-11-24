@@ -1,34 +1,46 @@
 # Functional Requirements
 
-# 1. Input Module Requirements
-	1.	The system shall prompt the user to enter the number of days for which they want to record study activity.
-	2.	The system shall allow the user to enter multiple subjects for each day.
-	3.	The system shall allow the user to enter the number of minutes spent on each subject.
-	4.	The system shall validate that:
-	•	subject names are non-empty strings
+# 1. Input Module
+	1.	The system will ask the user to enter the number of days they want to record study activity.
+	2.	The system will let the user enter multiple subjects for each day.
+	3.	The system will let the user enter the number of minutes spent on each subject.
+	4.	The system will check that:
+	•	subject names are not empty
 	•	study time is a positive integer
-	5.	The system shall allow the user to stop adding subjects for a day by typing the exit keyword (done).
-	6.	The system shall repeat this input collection process for all days requested by the user.
+	5.	The system will let the user stop adding subjects for a day by typing the exit keyword (done).
+	6.	The system will repeat this input collection process for all days the user requests.
 
 ⸻
 
-# 2. Processing Module Requirements
-	1.	The system shall store each day’s study records in a structured format.
-	2.	The system shall compute the total minutes studied for each day.
-	3.	The system shall identify:
-	•	the subject with the maximum study time for the day
-	•	the subject with the minimum study time for the day
-	4.	The system shall correctly handle:
-	•	days where only one subject was studied (max = min = same subject)
-	5.	The system shall prepare a structured data summary for the output module.
+# 2. Processing Module
+	1.	The system will store each day’s study records in a structured format.
+	2.	The system will calculate the total minutes studied for each day.
+	3.	The system will identify:
+	•	the subject with the most study time for the day
+	•	the subject with the least study time for the day
+	4.	The system will correctly manage days where only one subject was studied.
+	5.	The system will prepare a structured data summary for the output module.
 
 ⸻
 
-# 3. Output Module Requirements
-	1.	The system shall display all subjects studied during each day along with minutes spent.
-	2.	The system shall display the total study time per day.
-	3.	The system shall output the most studied and least studied subjects clearly.
-	4.	The system shall display results in a clean, readable format with headings.
-	5.	The system shall handle special situations such as:
+# 3. Output Module
+	1.	The system will display all subjects studied each day along with the minutes spent.
+	2.	The system will show the total study time for each day.
+	3.	The system will clearly indicate the most studied and least studied subjects.
+	4.	The system will present results in a clean, readable format with headings.
+	5.	The system will handle special cases such as:
 	•	days with only one subject
-	•	invalid inputs (with user-friendly error messages)
+	•	invalid inputs
+
+⸻
+
+# 4. Main System Module
+	1.	The system will control the overall program flow.
+	2.	The system will ask the user how many days they want to track.
+	3.	The system will repeatedly call:
+	•	the Input Module to collect the day’s study data
+	•	the Processing Module to analyze the collected data
+	•	the Output Module to display the results
+	4.	The system will manage each day separately within a loop.
+	5.	The system will ensure that all modules run only when main.py is executed directly (using the if __name__ == "__main__" guard).
+	6.	The system will integrate all components to ensure the complete Input → Processing → Output cycle.
