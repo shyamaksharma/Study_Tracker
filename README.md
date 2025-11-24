@@ -37,7 +37,7 @@
 
 ⸻
 
-# Functional Requirements
+# 📑 Functional Requirements
 
 # 1. Input Module
 	1.	The system will ask the user to enter the number of days they want to record study activity.
@@ -86,7 +86,7 @@
 
 ⸻
 
-# Non-Functional Requirements
+# 📑 Non-Functional Requirements
 
 # 1.	Usability
 	•	The system should be simple for any user to operate without technical knowledge.
@@ -118,3 +118,52 @@
 	
 	•	No data from one day should interfere with another day’s records.
 	
+⸻
+
+# ⚙️ Installation & Running the Project
+	  1. Clone the repository
+	     	git clone https://github.com/shyamaksharma/Study_Tracker.git
+	  2. Navigate the project folder
+	     	cd Study_Tracker
+	  3. Run the programm
+	     	python3 main.py
+
+
+⸻
+
+# 🧪 Testing Instructions
+
+	You can manually test the program by trying:
+		•	Entering valid and invalid minutes
+		•	Entering only one subject
+		•	Entering multiple subjects
+		•	Running multiple days
+		•	Trying invalid inputs (letters instead of numbers)
+
+⸻
+
+# 📂 Folder Structure
+	Study_Tracker/
+	│
+	├── README.md
+	├── statement.md
+	├── source code/
+	│   ├── Input.py
+	│   ├── processing.py
+	│   ├── output.py
+	│   └── main.py
+	│
+	└── screenshots/
+
+⸻
+
+# 🚀 Future Enhancements
+	•	Add graph visualization (matplotlib)
+	•	Export daily logs to a CSV file
+	•	Add weekly/monthly summaries
+	•	GUI version using Tkinter or PyQt
+	•	Error handling with exception messages instead of crashes
+
+⸻
+
+	  
