@@ -44,3 +44,38 @@
 	4.	The system will manage each day separately within a loop.
 	5.	The system will ensure that all modules run only when main.py is executed directly (using the if __name__ == "__main__" guard).
 	6.	The system will integrate all components to ensure the complete Input → Processing → Output cycle.
+
+⸻
+
+# Non-Functional Requirements
+
+# 1.	Usability
+	•	The system should be simple for any user to operate without technical knowledge.
+	
+	•	All prompts should be easy to understand.
+	
+# 2.	Reliability
+	•	The program should run without crashing during normal use.
+	
+	•	Input validation should prevent incorrect data from breaking the program.
+	
+# 3.	Performance
+	•	The system should respond immediately to user input.
+	
+	•	Processing daily study data should take less than a second, even with multiple subjects.
+	
+# 4.	Maintainability
+	•	The code should be organized into separate modules (Input, Processing, Output, Main) so it’s easy to update or expand later.
+	
+	•	Variable names and functions should be readable and meaningful.
+	
+# 5.	Portability
+	•	The program should run on any system that supports Python 3 (Windows, macOS, or Linux).
+	
+	•	No special libraries should be required.
+	
+# 6.	Data Integrity
+	•	The program should store and calculate study times accurately.
+	
+	•	No data from one day should interfere with another day’s records.
+	
